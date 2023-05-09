@@ -14,6 +14,7 @@
 <hr>
 
 ### Python bytecode
+#### Magic Calculations
 
 - `LOAD_CONST 1 (98)`: This instruction loads the constant value 98 onto the stack.
 - `LOAD_FAST 0 (a)`: This instruction loads the value of the local variable a onto the stack.
