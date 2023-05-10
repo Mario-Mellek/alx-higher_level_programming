@@ -1,4 +1,5 @@
-idef uppercase(str):
+#!/usr/bin/python3
+def uppercase(str):
     strLen = len(str)
     for i in range(strLen):
         c = str[i]
