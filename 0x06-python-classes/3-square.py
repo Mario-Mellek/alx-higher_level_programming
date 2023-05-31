@@ -20,9 +20,9 @@ class Square:
 
     def area(self):
         """
-        Computes the area of the square.
+        calculates the area of the square.
 
         Returns:
-            The area of the square as an integer.
+            The area of the square.
         """
         return self.__size ** 2
