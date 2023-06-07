@@ -4,7 +4,7 @@
 My name is First Last
 
 >>> say_my_name("First")
-My name is First
+My name is First 
 
 >>> say_my_name()
 Traceback (most recent call last):
