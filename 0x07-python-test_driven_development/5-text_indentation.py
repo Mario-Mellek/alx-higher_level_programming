@@ -31,8 +31,7 @@ def text_indentation(text):
             result += "\n" * 2
             if (text[i].isspace() is not True):
                 result += text[i]
-            i += 1
-            continue
-        result += text[i]
+        else:
+            result += text[i]
         i += 1
     print(result, end='')
