@@ -29,7 +29,7 @@ def text_indentation(text):
         if (text[i - 1] == ".") or\
          (text[i - 1] == "?") or (text[i - 1] == ":"):
             result += "\n" * 2
-            if (text[i] != ' '):
+            if (text[i].isspace() is not True):
                 result += text[i]
             i += 1
             continue
