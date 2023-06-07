@@ -29,6 +29,8 @@ def text_indentation(text):
         if (text[i - 1] == ".") or\
          (text[i - 1] == "?") or (text[i - 1] == ":"):
             result += "\n" * 2
+            if (text[i] != ' '):
+                result += text[i]
             i += 1
             continue
         result += text[i]
