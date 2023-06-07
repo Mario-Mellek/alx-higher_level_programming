@@ -44,3 +44,8 @@ TypeError: b must be an integer
 Traceback (most recent call last):
     ...
 ValueError: cannot convert float NaN to integer
+
+>>> add(1e+500, 1e+800)
+Traceback (most recent call last):
+    ...
+OverflowError: cannot convert float infinity to integer
