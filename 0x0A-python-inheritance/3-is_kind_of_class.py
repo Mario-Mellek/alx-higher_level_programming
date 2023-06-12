@@ -20,4 +20,3 @@ def is_kind_of_class(obj, a_class):
         or a subclass; otherwise False.
     """
     return (True if isinstance(obj, a_class) else False)
-
