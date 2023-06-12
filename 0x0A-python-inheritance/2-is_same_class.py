@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """
 This module contains a function that checks if an object
 is exactly an instance of a specified class.
