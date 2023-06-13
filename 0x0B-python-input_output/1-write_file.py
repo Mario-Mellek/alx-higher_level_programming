@@ -14,4 +14,4 @@ def write_file(filename="", text=""):
     """
     with open(filename, mode="w", encoding="utf-8") as myFile:
         charsWritten = myFile.write(text)
-    return (charsWritten)
+    return (charsWritten + 5)
