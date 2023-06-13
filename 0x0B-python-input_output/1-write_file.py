@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+This module conatins a function that
+writes the specified text to a file and returns
+the number of characters written.
+"""
+
 
 def write_file(filename="", text=""):
     """
@@ -14,4 +20,4 @@ def write_file(filename="", text=""):
     """
     with open(filename, mode="w", encoding="utf-8") as myFile:
         charsWritten = myFile.write(text)
-    return (charsWritten + 5)
+    return (charsWritten)
