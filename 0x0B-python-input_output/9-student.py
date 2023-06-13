@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+This module contains a definition of a class Student
+"""
 
 class Student:
     """
