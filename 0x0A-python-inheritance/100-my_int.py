@@ -3,6 +3,7 @@
 This module contains MyInt class that inherits from int.
 """
 
+
 class MyInt(int):
     """
     A class that represents an integer and inherits from int.
