@@ -37,7 +37,7 @@ class Student:
         Returns:
             dict: A dictionary representation of the Student instance.
         """
-        if attrs:
+        if attrs is not None:
             result = {}
             for attr in attrs:
                 if hasattr(self, attr):
