@@ -3,7 +3,6 @@
 This module contains a definition of a class Student
 """
 
-
 class Student:
     """
     Defines a student.
@@ -26,9 +25,13 @@ class Student:
         self.last_name = last_name
         self.age = age
 
+
     def to_json(self, attrs=None):
         """
         Retrieves a dictionary representation of a Student instance.
+
+        Args:
+            attrs (list): A list of attribute names to retrieve.
 
         Returns:
             dict: A dictionary representation of the Student instance.
