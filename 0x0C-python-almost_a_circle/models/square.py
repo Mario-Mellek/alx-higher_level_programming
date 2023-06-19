@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This module contains a class Rectangle definition
+This module contains a class Square definition
+inherits from rectangle
 """
 from models.rectangle import Rectangle
 
