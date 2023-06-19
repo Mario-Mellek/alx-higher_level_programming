@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 """
-This module contains a class Square definition
-inherits from rectangle
+This module contains a class Rectangle definition
 """
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
+    """
+    Square class that inherits from Rectangle
+    """
     def __init__(self, size, x=0, y=0, id=None):
         """
         Initializes a new Square instance.
