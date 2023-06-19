@@ -179,7 +179,7 @@ class Rectangle(Base):
             self.height
         )
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         Updates the attributes of the Rectangle instance.
 
@@ -191,3 +191,7 @@ class Rectangle(Base):
         for i, arg in enumerate(args):
             if i < len(attrs):
                 setattr(self, attrs[i], arg)
+        if not args:
+            for key, value in kwargs.items():
+                if key in attrs:
+                    setattr(self, key, value)
