@@ -32,6 +32,40 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    @staticmethod
+    def validator(name, value):
+        """Validate a value and raise appropriate errors.
+
+        Args:
+            name (str): name of the attribute being validated.
+            value (int): value to validate.
+
+        Raises:
+            TypeError: if value is not an integer.
+            ValueError: if value is less than or equal to 0.
+        """
+        if not isinstance(value, int):
+            raise TypeError("{} must be an integer".format(name))
+        if value <= 0:
+            raise ValueError("{} must be > 0".format(name))
+
+    @staticmethod
+    def coordinatesValidator(name, value):
+        """Validate a coordinate value and raise appropriate errors.
+
+        Args:
+            name (str): name of the attribute being validated.
+            value (int): value to validate.
+
+        Raises:
+            TypeError: if value is not an integer.
+            ValueError: if value is less than 0.
+        """
+        if not isinstance(value, int):
+            raise TypeError("{} must be an integer".format(name))
+        if value < 0:
+            raise ValueError("{} must be >= 0".format(name))
+
     @property
     def width(self):
         """Get the width of the rectangle.
@@ -48,6 +82,7 @@ class Rectangle(Base):
         Args:
             value (int): new width of the rectangle.
         """
+        self.validator("width", value)
         self.__width = value
 
     @property
@@ -66,6 +101,7 @@ class Rectangle(Base):
         Args:
             value (int): new height of the rectangle.
         """
+        self.validator("height", value)
         self.__height = value
 
     @property
@@ -84,6 +120,7 @@ class Rectangle(Base):
         Args:
             value (int): new x-coordinate of the rectangle.
         """
+        self.coordinatesValidator("x", value)
         self.__x = value
 
     @property
@@ -102,4 +139,5 @@ class Rectangle(Base):
         Args:
             value (int): new y-coordinate of the rectangle.
         """
+        self.coordinatesValidator("y", value)
         self.__y = value
