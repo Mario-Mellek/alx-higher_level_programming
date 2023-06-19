@@ -78,7 +78,7 @@ class Rectangle(Base):
         return self.__x
 
     @x.setter
-    def width(self, value):
+    def x(self, value):
         """Set the x-coordinate of the rectangle.
 
         Args:
@@ -96,7 +96,7 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def width(self, value):
+    def y(self, value):
         """Set the y-coordinate of the rectangle.
 
         Args:
