@@ -156,7 +156,9 @@ class Rectangle(Base):
         The rectangle is printed with the width and height specified by the
         width and height attributes
         """
+        print("\n" * self.y, end='')
         for i in range(self.height):
+            print(" ", end='')
             for j in range(self.width - 1):
                 print("#", end='')
             print("#")
