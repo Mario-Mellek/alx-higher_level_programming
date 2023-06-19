@@ -156,9 +156,9 @@ class Rectangle(Base):
         The rectangle is printed with the width and height specified by the
         width and height attributes
         """
-        print("\n" * self.y, end='')
+        print('\n' * self.y, end='')
         for i in range(self.height):
-            print(" " * self.x, end='')
+            print(' ' * self.x, end='')
             for j in range(self.width - 1):
                 print("#", end='')
             print("#")
@@ -178,3 +178,16 @@ class Rectangle(Base):
             self.width,
             self.height
         )
+
+    def update(self, *args):
+        """
+        Updates the attributes of the Rectangle instance.
+
+        Args:
+            *args: A variable-length list of arguments for
+            updating the attributes.
+        """
+        attrs = ['id', 'width', 'height', 'x', 'y']
+        for i, arg in enumerate(args):
+            if i < len(attrs):
+                setattr(self, attrs[i], arg)
