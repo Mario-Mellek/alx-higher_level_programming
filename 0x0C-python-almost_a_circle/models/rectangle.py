@@ -141,3 +141,11 @@ class Rectangle(Base):
         """
         self.coordinatesValidator("y", value)
         self.__y = value
+
+    def area(self):
+        """Calculate and return the area of the rectangle.
+
+         Returns:
+             int: area of the rectangle.
+         """
+        return self.width * self.height
