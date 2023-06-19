@@ -2,6 +2,8 @@
 """
 This module conatins a Base class definition
 """
+
+
 class Base:
     """Base class
 
@@ -10,6 +12,7 @@ class Base:
             keeps track of the number of objects
     """
     __nb_objects = 0
+
     def __init__(self, id=None):
         """Constructor method
         Base class constructor
@@ -18,7 +21,7 @@ class Base:
             id (int): id to assign to the instance.
         """
         if id is not None:
-             self.id = id
+            self.id = id
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
