@@ -63,8 +63,8 @@ class Square(Rectangle):
         The order of the arguments in *args is important: id, size, x, y.
 
         Args:
-            *args: A variable-length list of arguments to update the attributes.
-            **kwargs: A dictionary of keyword arguments to update the attributes.
+            *args: A variable-length list of arguments
+            **kwargs: A dictionary of keyword arguments
         """
         attrs = ['id', 'size', 'x', 'y']
         for i, arg in enumerate(args):
