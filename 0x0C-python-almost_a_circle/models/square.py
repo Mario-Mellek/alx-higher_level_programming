@@ -35,3 +35,24 @@ class Square(Rectangle):
             self.y,
             self.width
             )
+
+    @property
+    def size(self):
+        """
+        Gets the size of the Square instance.
+
+        Returns:
+            int: The size of the Square instance.
+        """
+        return self.width
+
+    @size.setter
+    def size(self, size):
+        """
+        Sets the size of the Square instance.
+
+        Args:
+            size (int): The new size of the Square instance.
+        """
+        self.width = size
+        self.height = size
